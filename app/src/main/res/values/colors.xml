@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorActionBar">#E91E63</color>
+    <color name="colorDarkPink">#BC1350</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorOrange">#F44336</color>
+    <color name="colorWhite">#FCFCFC</color>
+    <color name="colorRippleEffect">#00BCD4</color>
+
+    <color name="loginColor">#ff9900</color>
+    <color name="registerColor">#0099ff</color>
+    <color name="editTextColor">#f2f2f2</color>
+    <color name="dividerColor">#9EBCBCBA</color>
+    <color name="colorViewProfile">#E91E98</color>
+
+    <color name="anchorColor">#C6949494</color>
+    <color name="emailColor">#000BD4</color>
+
+</resources>

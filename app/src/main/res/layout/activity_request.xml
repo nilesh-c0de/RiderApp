@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestActivity">
+
+    <ImageView
+        android:src="@drawable/correct"
+        android:id="@+id/correctMark"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/txtReq"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="32dp"
+        android:textSize="32sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Requesting..."/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/txtFe"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="48dp"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fare estimate"/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/txtCost"
+        android:layout_below="@+id/txtFe"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Rs"/>
+    <TextView
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/txtCost"
+        android:layout_marginTop="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your fare may change, if u update your destination or multiple stops in destination"/>
+    <ImageView
+        android:src="@drawable/ic_close_black_24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/imgClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+</RelativeLayout>

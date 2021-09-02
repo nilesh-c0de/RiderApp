@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AmountActivity">
+
+    <TextView
+        android:textSize="16dp"
+        android:textColor="@color/colorBlack"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:layout_above="@+id/xd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This app don't use any payment integration\nSo please enter your bill manually here!\nFor demonstration purpose"/>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:id="@+id/xd"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_margin="8dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount:"
+            android:textSize="32dp"
+            android:textColor="@color/colorBlack"/>
+        <EditText
+            android:id="@+id/edit_amount"
+            android:background="@drawable/shape_edit_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="16dp"
+        android:id="@+id/msg_help"
+        android:layout_below="@+id/xd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your amount very fast by following chips!"/>
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/msg_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="10 Rs"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="20 Rs"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="30 Rs"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="40 Rs"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="50 Rs"
+            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+    </LinearLayout>
+</RelativeLayout>

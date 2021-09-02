@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Normal map"
+        android:id="@+id/normal_map"/>
+
+    <item android:title="Satellite map"
+        android:id="@+id/satellite_map"/>
+
+    <item android:title="Night map"
+        android:id="@+id/night_map"/>
+</menu>
